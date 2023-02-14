@@ -1,4 +1,4 @@
-function twoSum(numbers: number[], target: number): number[] {
+function twoSumII(numbers: number[], target: number): number[] {
   let pLeft = 0,
     pRight = numbers.length - 1;
 
