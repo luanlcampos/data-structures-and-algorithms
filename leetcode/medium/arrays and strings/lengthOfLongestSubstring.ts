@@ -23,3 +23,29 @@ function lengthOfLongestSubstring(s: string): number {
 }
 
 console.log(lengthOfLongestSubstring("pwwkew"));
+
+function lengthOfLongestSubstringWithSet(s: string): number {
+  // two pointers
+  // move right and increase counter
+  // when a repeated character is found, store the length
+  // move left to right and reassign counter
+
+  let left: number = 0,
+    right: number = 1;
+  let maxLen: number = 0;
+  let subSet: Set<string> = new Set();
+
+  subSet.add(s[0]);
+  // pwwkew
+  while (right < s.length) {
+    if (!subSet.has(s[right])) {
+      subSet.add(s[right]);
+    } else {
+      left = right;
+    }
+    maxLen = Math.max(right - left + 1, maxLen);
+    right++;
+  }
+
+  return maxLen;
+}
