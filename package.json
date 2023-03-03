@@ -1,0 +1,28 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "This repository contains solutions to various data structures and algorithms problems from LeetCode and Cracking the Coding Interview. The purpose of this repository is to provide an organized and easily accessible source for practicing and improving one's understanding of these fundamental computer science concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "start": "ts-node "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanlcampos/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanlcampos/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/luanlcampos/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "typescript": "^4.9.5"
+  }
+}
