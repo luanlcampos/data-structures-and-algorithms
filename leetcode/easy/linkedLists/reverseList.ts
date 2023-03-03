@@ -15,7 +15,7 @@ function reverseList(head: ListNode | null): ListNode | null {
   let prevNode: ListNode | null = null;
 
   while (head !== null) {
-    let newHead: ListNode | null = head.next;
+    const newHead: ListNode | null = head.next;
     head.next = prevNode;
     prevNode = head;
     head = newHead;
@@ -31,7 +31,7 @@ const printList = (head: ListNode | null): void => {
   }
 };
 
-let input: ListNode | null = new ListNode(
+const input: ListNode | null = new ListNode(
   1,
   new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
 );
@@ -50,5 +50,3 @@ const actualOutput = reverseList(input);
 
 console.log("Actual output:");
 printList(actualOutput);
-
-console.log("Test passed?", actualOutput === expectedOutput);
